@@ -24,6 +24,11 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+// Health Check Route
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 // Mount Routers
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
