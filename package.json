@@ -1,0 +1,8 @@
+{
+  "name": "ajith-travel-app-root",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd backend && npm install && node server.js",
+    "build": "cd frontend && npm install && npm run build"
+  }
+}
